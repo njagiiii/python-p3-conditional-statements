@@ -2,7 +2,7 @@
 
 def admin_login(username, password):
     # your code here
-    if username =="admin" or username == "ADMIN" and password == "12345":
+    if (username =="admin" or username == "ADMIN" )and password == "12345":
         return 'Access granted'
     else:
         return 'Access denied'
@@ -42,6 +42,7 @@ def calculator(operation, num1, num2):
      elif operation == "/":
          return num1 / num2
      else:
-         return "Invalid operation!" 
+         print("Invalid operation!")
+         return None 
 
 
